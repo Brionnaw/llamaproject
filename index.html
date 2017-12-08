@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  <!-- Bootstap -->
+  <script type="text/javascript" src="app.js"></script>
 </head>
 <style>
 body {
@@ -31,7 +32,7 @@ body {
  }
 .banner {
   background-image: url("http://media.egia.org/skills_test/llamazingHeadBG.png");
- min-height:350px;
+  min-height:350px;
 }
 .banner .row {
   text-align:center;
@@ -111,7 +112,11 @@ footer {
 ul.dropdown-menu {
     background-color: #1a1a1a;
 }
+/*for mobile*/
 @media (max-width: 992px) {
+  .banner{
+    background-position: right 1000px bottom 10px;
+  }
   .opaque-navbar {
     background-color: transparent;
     height: 60px;
@@ -120,6 +125,35 @@ ul.dropdown-menu {
   .navbar-inverse .navbar-nav>.active>a {
     background-color: transparent;
   }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.brand img {
+  padding-top: 10px;
+}
+.brand {
+  position: absolute;
+  padding-left: 50px;
+  float: left;
+}
+.navbar-default {
+  background-color: #000;
+  opacity: 0.5;
+}
 hr {
    width:25%;
    padding: 1px;
@@ -133,7 +167,7 @@ hr {
  </style>
 <body>
   <!-- navigation -->
-  <nav class="navbar navbar-inverse navbar-fixed-top opaque-navbar">
+  <nav class="navbar navbar-inverse navbar-fixed-top opaque-navbar hidden-xs">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -164,6 +198,25 @@ hr {
       </div>
     </div>
   </nav>
+  <!-- mobile nav -->
+
+     <nav class="navbar navbar-default navbar-fixed-top visible-xs">
+      <div class="container" style="padding-left: 0px; color:#fff;">
+        <span onclick="togglevisibility('foo')">
+          <div class="dropdown">
+            <h1 style="padding-left:5px;"> <i class="fa fa-bars" aria-hidden="true"></i></h1>
+            <div id="foo" style="display:none;" class="dropdown-content">
+              <p><a href="#">HOME</a></p>
+              <p><a href="#">ABOUT LLAMAS</a></p>
+              <p><a href="#">CARE & FEEDING</a></p>
+              <p><a href="#">COMMUNITY</a></p>
+              <p><a href="#">CONTACT US</a></p>
+              <p><a href="#">SIGN IN</a></p>
+            </div>
+          </span>
+        </div>
+      </div>
+    </nav>
 
   <!-- banner section -->
   <section class="banner"></section>
@@ -202,7 +255,7 @@ hr {
       <div class="image">
         <img src="http://media.egia.org/skills_test/bonusBG.png" alt="llama" />
         <h2 class="bonus-text">
-          <div id="bonus-header">Bonus Fact</div><p style="font-weight:normal;font-size:16px;line-height: px;">Trying to tell the difference between a llama and an alpaca? Two obvious things to look for: Llamas are generally about twice the size of alpacas, and alpacas have short, pointy ears, whereas llamas have much longer ears that stand straight up and give them an alert look.</p></span></h2>
+          <div id="bonus-header">Bonus Fact</div><p style="font-weight:normal;font-size:16px;line-height: 35px;">Trying to tell the difference between a llama and an alpaca? Two obvious things to look for: Llamas are generally about twice the size of alpacas, and alpacas have short, pointy ears, whereas llamas have much longer ears that stand straight up and give them an alert look.</p></span></h2>
       </div>
     </section>
 
