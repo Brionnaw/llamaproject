@@ -86,6 +86,11 @@ hr {
 .btn-text {
   color:#fff;
 }
+.bonus-ptext {
+  font-weight:normal;
+  font-size:16px;
+  line-height: 35px;
+}
 footer {
   background-color:#c1272d;
   font-size:16px;
@@ -116,6 +121,24 @@ ul.dropdown-menu {
 @media (max-width: 992px) {
   .banner{
     background-position: right 1000px bottom 0px;
+  }
+  .bonus-text {
+      position: absolute;
+      top: 60px;
+      width: 86%;
+      left: 18px;
+      background-color: #fff;
+      opacity: 0.8;
+      padding: 48px 13px 0px 31px;
+      color: #000;
+  }
+  .bonus-ptext {
+    font-weight:normal;
+    font-size:14px;
+  }
+  #bonus-header {
+    padding-left: 30px;
+    color:#c1272d;
   }
   .opaque-navbar {
     background-color: transparent;
@@ -257,7 +280,7 @@ hr {
       <div class="image">
         <img src="http://media.egia.org/skills_test/bonusBG.png" alt="llama" />
         <h2 class="bonus-text">
-          <div id="bonus-header">Bonus Fact</div><p style="font-weight:normal;font-size:16px;line-height: 35px;">Trying to tell the difference between a llama and an alpaca? Two obvious things to look for: Llamas are generally about twice the size of alpacas, and alpacas have short, pointy ears, whereas llamas have much longer ears that stand straight up and give them an alert look.</p></span></h2>
+          <div id="bonus-header">Bonus Fact</div><p class="bonus-ptext">Trying to tell the difference between a llama and an alpaca? Two obvious things to look for: Llamas are generally about twice the size of alpacas, and alpacas have short, pointy ears, whereas llamas have much longer ears that stand straight up and give them an alert look.</p></span></h2>
       </div>
     </section>
 
