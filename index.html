@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>llamas</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Roboto Google Font-->
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <!-- Font Awesome Icons-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  <!-- Bootstap -->
+</head>
+<style>
+.navbar-nav {
+    margin: 10px;
+  }
+ h2 {
+   font-weight: bold;
+   color:#c1272d;
+ }
+ h5 {
+   color:#565656;
+   font-weight: bold;
+ }
+.banner {
+  background-image: url("http://media.egia.org/skills_test/llamazingHeadBG.png");
+ min-height:350px;
+}
+.banner .row {
+  text-align:center;
+  margin-top:50px;
+}
+.banner h1 {
+  color:white;
+}
+
+.navbar-inverse .navbar-nav>.active>a {
+  background-color: transparent;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color:#fff;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color:#fff;
+}
+.dropdown-menu>li>a {
+  color:#fff;
+}
+.dropdown-menu>li>a:hover{
+  background-color: #c1272d;
+
+}
+hr {
+  border-top: 2px solid #c1272d;
+}
+.image {
+   position: relative;
+   width: 100%; /* for IE 6 */
+}
+
+.bonus-text {
+   position: absolute;
+   top: 200px;
+   width: 50%;
+   left: 350px;
+   background-color: #fff;
+   opacity: 0.8;
+   padding:40px 20px 40px 20px;
+   color:#000;
+
+}
+#bonus-header {
+  padding-left: 200px;
+  color:#c1272d;
+}
+.btn {
+  background-color: #c1272d;
+  margin:10px;
+}
+.btn-text {
+  color:#fff;
+}
+footer {
+  background-color:#c1272d;
+  font-size:16px;
+  color:#fff;
+  text-align: right;
+  font-weight: bold;
+}
+
+/***********************************************************************
+*  OPAQUE NAVBAR SECTION
+***********************************************************************/
+.opaque-navbar {
+    background-color: rgba(0,0,0,0.5);
+   /*Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)*/
+    height: 70px;
+    border-bottom: 0px;
+    transition: background-color .5s ease 0s;
+}
+
+.opaque-navbar.opaque {
+    background-color: black;
+    height: 60px;
+    transition: background-color .5s ease 0s;
+}
+ul.dropdown-menu {
+    background-color: #1a1a1a;
+}
+@media (max-width: 992px) {
+  .opaque-navbar {
+    background-color: transparent;
+    height: 60px;
+    transition: background-color .5s ease 0s;
+  }
+  .navbar-inverse .navbar-nav>.active>a {
+    background-color: transparent;
+  }
+hr {
+   width:25%;
+   padding: 1px;
+   color: #c1272d;
+ }
+}
+#red_row {
+  background-color: #c1272d;
+  padding:0.2em;
+}
+ </style>
+<body>
+  <!-- navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top opaque-navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <img src="http://media.egia.org/skills_test/llamazingLogo.png" alt="llama">
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">HOME</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT LLAMAS <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Red llamas</a></li>
+              <li><a href="#">Green llmmas</a></li>
+              <li><a href="#">Blue llamas</a></li>
+            </ul>
+          </li>
+          <li><a href="#">CARE & FEEDING</a></li>
+          <li><a href="#">COMMUNITY</a></li>
+          <li><a href="#">CONTACT US</a></li>
+          <li>
+            <button type="button" class="btn"><a class="btn-text" href="#"> SIGN IN <i class="fa fa-sign-in" aria-hidden="true"></i></a></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- banner section -->
+  <section class="banner"></section>
+  <div id="red_row"></div>
+  <!-- llama fact section -->
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-">
+        <h2>Llama Facts</h2>
+        <h5>Fun Facts about Llama's</h5>
+        <hr>
+        <p>These sturdy creatures are domestic animals used by the peoples of the Andes Mountains. (Their wild relatives are guanacos and vicuñas). Native peoples have used llamas as pack animals for centuries. Typically, they are saddled with loads of 50 to 75 pounds. Under such weight they can cover up to 20 miles in a single day. Pack trains of llamas, which can include several hundred animals, move large amounts of goods over even the very rough terrain of the Andes.
+          <p>A llama trek is an unforgettable experience that may leave you curious to learn more about these bright-eyed, sure-footed hiking companions. Here are a few more interesting and fun facts about llamas that may inspire you to set out in the woods with these curious beasts:</p>
+          <ul>
+            <li>Llamas are members of the camelid, or camel, family</li>
+            <li>Llamas can grow as much as 6 feet tall</li>
+            <li>Llama poop has almost no odor</li>
+            <li>Llamas are smart and easy to train</li>
+            <li>Llamas are hardy and well suited to harsh environments</li>
+            <li>Llamas live to be about 20 years old</li>
+          </ul>
+          <button type="button" class="btn">
+            <a class="btn-text" href="#"> READ MORE
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            </a>
+          </button>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <img src="http://media.egia.org/skills_test/llamaFacts.png" alt="llama"/>
+        </div>
+      </div>
+    </div>
+    <div id="red_row"></div>
+    <!-- bonus fact section -->
+    <section>
+      <div class="image">
+        <img src="http://media.egia.org/skills_test/bonusBG.png" alt="llama" />
+        <h2 class="bonus-text">
+          <div id="bonus-header">Bonus Fact</div><p style="font-size:16px;">Trying to tell the difference between a llama and an alpaca? Two obvious things to look for: Llamas are generally about twice the size of alpacas, and alpacas have short, pointy ears, whereas llamas have much longer ears that stand straight up and give them an alert look.</p></span></h2>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer>Copyright  2008  Llamazing.
+      <br>All Rights Reserved.
+    </footer>
+  </div>
+  </body>
+</html>
